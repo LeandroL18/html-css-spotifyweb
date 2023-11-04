@@ -11,6 +11,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* Stili wrapper_up */
 #wrapper_up{
     height: calc(100vh - 100px);
@@ -22,7 +30,50 @@
     width: 250px;
     height: 100%;
     background-color: rgb(0, 0, 0);
+    padding: 20px 20px 0 20px;
+    color: gray;
 }
+#sidebar img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+#sidebar a, hr{
+    color: gray;
+}
+#sidebar ul:last-child li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+} 
+#sidebar ul:first-of-type{
+    margin-bottom: 20px;
+}
+#sidebar h5{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#sidebar hr{
+    margin: -10px 0 10px 0;
+}
+#sidebar div{
+    height: calc(100% - 70px);
+}
+#sidebar div ul:last-child{
+    height: 60%;
+    overflow-y: auto;
+}
+.icon{
+    margin: 0px -50px;
+    height: 24px;
+    vertical-align: -25px;
+}
+#profile{
+    border: 1px solid gray;
+    margin: 0;
+    border-radius: 10%;
+
+}
+
+
 
 /* Stili main_player */
 #main_player{
@@ -43,8 +94,8 @@
 }
 
 #upgrade a{
-    text-decoration: none;
     font-size: 12px;
+    font-weight: bold;
     border: 1px solid white;
     border-radius: 20px;
     padding: 7px 35px;
