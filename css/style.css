@@ -3,9 +3,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 :root{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Stili wrapper_up */
+#wrapper_up{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+/* Stili sidebar */
+#sidebar{
+    width: 250px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Stili main_player */
+#main_player{
+    flex-grow: 1;
+    background-color: rgb(21, 20, 38);
+}
+
+/* Stili upgrade */
+#upgrade{
+    background-color: rgba(2, 0, 18, 0.6);
+    height: 70px;
+    text-align: right;
+    padding-top: 24px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 250px);
+}
+
+#upgrade a{
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7px 35px;
+    margin-right: 20px;
+}
+
+
+/* Stili controller */
+#controller{
+    height: 100px;
+    background-color: rgb(48, 48, 48);
 }
