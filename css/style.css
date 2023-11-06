@@ -27,14 +27,15 @@ a{
 
 /* Stili sidebar */
 #sidebar{
-    width: 35%;
+    width: 200px;
     height: 100%;
     background-color: rgb(0, 0, 0);
     padding: 20px 20px 0 20px;
     color: gray;
+    position: relative;
 }
 #sidebar img:first-child{
-    width: 80%;
+    width: 140px;
     margin-bottom: 20px;
 }
 #sidebar a, hr{
@@ -62,15 +63,10 @@ a{
     overflow-y: auto;
 }
 .icon{
-    margin: 0px -50px;
+    margin: 0px -60px;
     height: 24px;
     vertical-align: -25px;
-}
-#profile{
-    border: 1px solid gray;
-    margin: 0;
-    border-radius: 50%;
-    background-color: gray;
+    filter: invert(50%);
 }
 .fa-plus{
     color: black;
@@ -82,18 +78,28 @@ a{
 #download{
     height: 18px;
 }
+#profile{
+    margin-right: -50px;
+    filter: invert(0);
+}
+.vl{
+    border-left: 3px solid rgb(195, 255, 0);
+    margin: -20px;
+    position: absolute;
+    top: 100px;
+    height: 20px;
+}
+
+
+
+
 
 /* Stili main_player */
 #main_player{
     flex-grow: 1;
     background-color: rgb(21, 20, 38);
     padding: 0 5px 0 20px;
-}
-#main_player hr{
-    width: 28px;
-    margin-left: 18%;
-    color: rgb(195, 255, 0);
-    border-top: 2px solid rgb(195, 255, 0);
+    overflow-y: auto;
 }
 #main_player h3{
     margin: 20px 0 0 0;
@@ -103,7 +109,7 @@ a{
     flex-wrap: wrap;
 }
 .playlist{
-    width: calc((100% / 6) - 10px);
+    width: 130px;
     text-align: center;
     margin-right: 10px;
 }
@@ -116,6 +122,11 @@ a{
     color: gray;
     margin: 5px;
 }
+.circle{
+    border-radius: 50%;
+}
+
+
 
 /* Stili upgrade */
 #upgrade{
@@ -126,7 +137,7 @@ a{
     position: fixed;
     top: 0;
     right: 0;
-    width: 82.5%;
+    width: calc(100% - 200px);
 }
 #upgrade a{
     font-size: 12px;
@@ -149,12 +160,16 @@ a{
     font-weight: 800;
 }
 #nav_bar li{
-    display: inline-flex;
-    margin: 0 8px 0 8px;
+    display: inline-block;
+    margin: 0 10px 10px 10px;
     font-size: 12px;
 }
-
-
+#nav_bar hr{
+    width: 28px;
+    margin-left: 30%;
+    color: rgb(195, 255, 0);
+    border-top: 2px solid rgb(195, 255, 0);
+}
 
 
 /* Stili controller */
