@@ -19,26 +19,27 @@
                 <!-- Vertical line -->
                 <div class="vl"></div>
                 <div>
-                    <img src="img/logo.svg" alt="logo">
+                    <div id="logo"></div>
+                    <!-- <img src="img/logo.svg" alt="logo"> -->
                     <ul>
                         <li>
                             <a href="#">
-                                <img class="icon" src="img/home.svg" alt="home"> Home
+                                <img class="icon" src="img/home.svg" alt="home"> <span>Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="icon" src="img/search.svg" alt="search"> Cerca
+                                <img class="icon" src="img/search.svg" alt="search"> <span>Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="icon" src="img/libreria.svg" alt="libreria"> La tua libreria
+                                <img class="icon" src="img/libreria.svg" alt="libreria"> <span>La tua libreria</span>
                             </a>
                         </li>
                     </ul>
                     <h5>PLAYLIST</h5>
-                    <a href="#">
+                    <a id="crea" href="#">
                         <i class="fa-solid fa-plus"></i> 
                         Crea Playlist
                     </a>
@@ -52,18 +53,19 @@
                         <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
-                
-                <a href="#">
-                    <img id="download" class="icon" src="img/download.svg" alt="download">
-                    Installa app
-                </a>
-                <hr>
-                <span>
-                    <img class="icon" id="profile" src="img/profile.svg" alt="profile">  
-                    John Doe
-                </span>
-                
+                <div>
+                    <a href="#">
+                        <img id="download" class="icon" src="img/download.svg" alt="download">
+                        <span>Installa app</span>
+                    </a>
+                    <hr>
+                    <a href="#">
+                        <img class="icon" id="profile" src="img/profile.svg" alt="profile">  
+                    <span id="nome">John Doe</span>        
+                    </a>
+                </div>
             </div>
+
             <!-- Container centrale -->
             <div id="main_player">
                 <!-- Barra upgrade -->
@@ -84,32 +86,44 @@
                 <!-- Prima riga di cover -->
                 <h3>Recently played</h3>
                 <div class="row_playlist">
-                    <div class="playlist">
+                    <div class="playlist"> 
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+                        
                         <img src="img/metal_lifting.jpg" alt="cover">
                         <h5>Heavy Metal</h5>
                         <h6 class="sottotitolo">Subtitle</h6>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/stranger.jpeg" alt="cover">
                         <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
                         <h6 class="sottotitolo">Kyle Dixon & Michael Stein</h6>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/aquietplace.jpeg" alt="cover">
                         <h5>A quiet place</h5>
                         <h6 class="sottotitolo">Subtitle</h6>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/split.jpeg" alt="cover">
                         <h5>Split</h5>
                         <h6 class="sottotitolo">Subtitle</h6>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/cure.jpeg" alt="cover">
                         <h5>A cure for wellness</h5>
                         <h6 class="sottotitolo">Subtitle</h6>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/sinister.jpeg" alt="cover">
                         <h5>Sinister</h5>
                         <h6 class="sottotitolo">Subtitle</h6>
@@ -120,10 +134,14 @@
                 <h6 class="sottotitolo">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h6>
                 <div class="row_playlist">
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/radar.jpeg" alt="cover">
                         <h5>Relase Radar</h5>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="fa-regular fa-circle-play"></i>
+
                         <img src="img/mixdaily.jpeg" alt="cover">
                         <h5>Dally Mix 1</h5>
                     </div>
@@ -133,10 +151,14 @@
                 <h6 class="sottotitolo">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h6>
                 <div class="row_playlist">
                     <div class="playlist">
+                        <i id="play_hover" class=" circle fa-regular fa-circle-play"></i>
+
                         <img class="circle" src="img/youg.jpeg" alt="cover">
                         <h5>Relase Radar</h5>
                     </div>
                     <div class="playlist">
+                        <i id="play_hover" class="circle fa-regular fa-circle-play"></i>
+
                         <img class="circle" src="img/einaudi.jpeg " alt="cover">
                         <h5>Dally Mix 1</h5>
                     </div>
@@ -148,7 +170,36 @@
         </div>
 
         <div id="controller">
-
+            <div class="control_cell">
+                <img src="img/sinister.jpeg" alt="cover">
+                <div>
+                    <h5>Sinister</h5>
+                    <a href="#"><h6>Brano Nome</h6></a>
+                </div>
+                
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
+            </div>
+            <div class="control_cell">
+                <div>
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                </div>
+                <div>
+                    <span class="white">0:25</span>
+                    <hr>
+                    <span class="white">4:35</span>
+                </div>
+            </div>
+            <div class="control_cell">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                <hr>
+            </div>
         </div>
         
     </body>
